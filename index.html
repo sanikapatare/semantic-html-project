@@ -1,475 +1,635 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
 
     <meta
         name="description"
-        content="A modern website demonstrating HTML5 semantic elements."
+        content="Personal portfolio of Sanika Patare, an aspiring web developer."
     >
 
-    <title>Semantic HTML5 | Internship Task</title>
+    <title>Sanika Patare | Portfolio</title>
 
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-    <!-- ================= HEADER ================= -->
+    <!-- =====================================
+         HEADER
+    ====================================== -->
     <header class="site-header">
 
-        <div class="container">
+        <div class="container header-inner">
 
-            <h1>Semantic HTML5</h1>
+            <a class="logo" href="index.html">
+                Sanika<span>Portfolio</span>
+            </a>
 
-            <p class="tagline">
-                Understanding the structure and meaning of modern HTML
-            </p>
+            <!-- NAVIGATION -->
+            <nav
+                class="site-nav"
+                id="main-navigation"
+                aria-label="Main navigation"
+            >
 
-            <!-- ================= NAVIGATION ================= -->
-            <nav aria-label="Main Navigation">
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#elements">Elements</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul>
+
+                    <li>
+                        <a
+                            href="index.html"
+                            aria-current="page"
+                        >
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="projects.html">
+                            Projects
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+
                 </ul>
+
             </nav>
+
+            <!-- HEADER ACTIONS -->
+            <div class="header-actions">
+
+                <button
+                    type="button"
+                    class="theme-toggle"
+                    id="theme-toggle"
+                    aria-label="Switch to dark mode"
+                >
+                    🌙 Dark Mode
+                </button>
+
+                <button
+                    type="button"
+                    class="menu-toggle"
+                    id="menu-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="main-navigation"
+                >
+                    ☰
+                </button>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- ================= MAIN ================= -->
-    <main id="home">
+    <!-- =====================================
+         MAIN
+    ====================================== -->
+    <main>
 
-        <div class="container main-layout">
+        <!-- =================================
+             HERO
+        ================================== -->
+        <section class="hero">
 
-            <!-- ================= PRIMARY CONTENT ================= -->
-            <div class="content">
+            <div class="container hero-grid">
 
-                <!-- HERO / INTRODUCTION -->
-                <section class="hero-section">
+                <div class="hero-content">
 
-                    <p class="label">HTML5 INTERNSHIP TASK</p>
-
-                    <h2>Build Meaningful Web Pages with Semantic HTML</h2>
-
-                    <p>
-                        Semantic HTML uses meaningful elements to describe
-                        the structure and purpose of content on a webpage.
+                    <p class="eyebrow">
+                        WELCOME TO MY PORTFOLIO
                     </p>
 
-                    <p>
-                        Instead of using generic containers everywhere,
-                        semantic elements make your page easier to understand
-                        for developers, browsers, and assistive technologies.
+                    <h1>
+                        Hi, I'm
+                        <span>Sanika Patare</span>.
+                        <br>
+                        I build modern websites.
+                    </h1>
+
+                    <p class="lead">
+                        I am a student and aspiring web developer
+                        interested in creating responsive,
+                        accessible, and user-friendly web experiences.
                     </p>
 
-                </section>
-
-
-                <!-- ================= ABOUT ================= -->
-                <section id="about" class="section">
-
-                    <header class="section-header">
-                        <p class="label">ABOUT</p>
-
-                        <h2>What is Semantic HTML?</h2>
-                    </header>
-
-                    <article class="card">
-
-                        <h3>Meaningful Structure</h3>
-
-                        <p>
-                            Semantic HTML means using HTML elements according
-                            to their meaning and purpose.
-                        </p>
-
-                        <p>
-                            For example,
-                            <code>&lt;header&gt;</code> represents introductory
-                            content,
-                            <code>&lt;nav&gt;</code> represents navigation,
-                            and <code>&lt;footer&gt;</code> represents footer
-                            information.
-                        </p>
-
-                        <p>
-                            This creates a clear and organized document structure.
-                        </p>
-
-                    </article>
-
-
-                    <article class="card">
-
-                        <h3>Why is Semantic HTML Important?</h3>
-
-                        <p>
-                            Semantic elements help developers understand a
-                            webpage's structure and provide useful information
-                            to browsers and assistive technologies.
-                        </p>
-
-                        <p>
-                            Good semantic structure can also make websites
-                            easier to maintain.
-                        </p>
-
-                    </article>
-
-                </section>
-
-
-                <!-- ================= ELEMENTS ================= -->
-                <section id="elements" class="section">
-
-                    <header class="section-header">
-
-                        <p class="label">HTML5</p>
-
-                        <h2>Important Semantic Elements</h2>
-
-                        <p>
-                            Here are some of the most commonly used semantic
-                            elements in HTML5.
-                        </p>
-
-                    </header>
-
-
-                    <div class="element-grid">
-
-                        <!-- HEADER -->
-                        <article class="element-card">
-
-                            <div class="element-number">01</div>
-
-                            <h3>&lt;header&gt;</h3>
-
-                            <p>
-                                Represents introductory content for a webpage
-                                or a section.
-                            </p>
-
-                        </article>
-
-
-                        <!-- NAV -->
-                        <article class="element-card">
-
-                            <div class="element-number">02</div>
-
-                            <h3>&lt;nav&gt;</h3>
-
-                            <p>
-                                Contains important navigation links used to move
-                                through a website.
-                            </p>
-
-                        </article>
-
-
-                        <!-- MAIN -->
-                        <article class="element-card">
-
-                            <div class="element-number">03</div>
-
-                            <h3>&lt;main&gt;</h3>
-
-                            <p>
-                                Contains the primary content of the webpage.
-                            </p>
-
-                        </article>
-
-
-                        <!-- SECTION -->
-                        <article class="element-card">
-
-                            <div class="element-number">04</div>
-
-                            <h3>&lt;section&gt;</h3>
-
-                            <p>
-                                Groups related content into a meaningful section.
-                            </p>
-
-                        </article>
-
-
-                        <!-- ARTICLE -->
-                        <article class="element-card">
-
-                            <div class="element-number">05</div>
-
-                            <h3>&lt;article&gt;</h3>
-
-                            <p>
-                                Represents independent, self-contained content.
-                            </p>
-
-                        </article>
-
-
-                        <!-- ASIDE -->
-                        <article class="element-card">
-
-                            <div class="element-number">06</div>
-
-                            <h3>&lt;aside&gt;</h3>
-
-                            <p>
-                                Contains related information that is separate
-                                from the main content.
-                            </p>
-
-                        </article>
-
-
-                        <!-- FOOTER -->
-                        <article class="element-card">
-
-                            <div class="element-number">07</div>
-
-                            <h3>&lt;footer&gt;</h3>
-
-                            <p>
-                                Contains footer information for the webpage
-                                or a section.
-                            </p>
-
-                        </article>
-
-
-                        <!-- DETAILS -->
-                        <article class="element-card">
-
-                            <div class="element-number">08</div>
-
-                            <h3>&lt;details&gt;</h3>
-
-                            <p>
-                                Creates an expandable area containing additional
-                                information.
-                            </p>
-
-                        </article>
+                    <div class="hero-actions">
+
+                        <a
+                            class="btn btn-primary"
+                            href="projects.html"
+                        >
+                            View My Projects
+                        </a>
+
+                        <a
+                            class="btn btn-secondary"
+                            href="contact.html"
+                        >
+                            Contact Me
+                        </a>
 
                     </div>
 
-                </section>
+                </div>
 
 
-                <!-- ================= ARTICLES ================= -->
-                <section class="section">
+                <!-- PROFILE CARD -->
+                <aside
+                    class="hero-card"
+                    aria-label="Profile summary"
+                >
 
-                    <header class="section-header">
+                    <div
+                        class="profile-placeholder"
+                        aria-hidden="true"
+                    >
+                        SP
+                    </div>
 
-                        <p class="label">ARTICLES</p>
-
-                        <h2>Semantic HTML in Practice</h2>
-
-                    </header>
-
-
-                    <article class="article-post">
-
-                        <header>
-
-                            <h3>Creating a Clear Page Structure</h3>
-
-                            <p class="article-meta">
-                                Published on
-                                <time datetime="2026-10-02">
-                                    October 2, 2026
-                                </time>
-                            </p>
-
-                        </header>
-
-                        <p>
-                            A well-structured webpage can use a
-                            <strong>header</strong> for introductory information,
-                            a <strong>nav</strong> element for navigation,
-                            a <strong>main</strong> element for the primary
-                            content, and a <strong>footer</strong> for
-                            closing information.
-                        </p>
-
-                        <p>
-                            Inside the main content, related information can be
-                            organized using sections and independent pieces of
-                            content can be represented using articles.
-                        </p>
-
-                        <footer>
-                            <span>HTML5</span>
-                            <span>Semantic Web</span>
-                            <span>Internship Project</span>
-                        </footer>
-
-                    </article>
-
-                </section>
-
-
-                <!-- ================= DETAILS / SUMMARY ================= -->
-                <section class="section">
-
-                    <header class="section-header">
-
-                        <p class="label">EXTRA INFORMATION</p>
-
-                        <h2>Learn More</h2>
-
-                    </header>
-
-                    <details class="details-box">
-
-                        <summary>
-                            Why should developers use semantic elements?
-                        </summary>
-
-                        <p>
-                            Semantic elements clearly communicate the purpose
-                            of different parts of a webpage. This makes the
-                            HTML easier to read, understand, and maintain.
-                        </p>
-
-                    </details>
-
-                    <details class="details-box">
-
-                        <summary>
-                            What is the difference between section and article?
-                        </summary>
-
-                        <p>
-                            A section generally groups related content,
-                            while an article represents content that can stand
-                            on its own as an independent piece.
-                        </p>
-
-                    </details>
-
-                </section>
-
-
-                <!-- ================= CONTACT ================= -->
-                <section id="contact" class="section contact-section">
-
-                    <header class="section-header">
-
-                        <p class="label">CONTACT</p>
-
-                        <h2>Get in Touch</h2>
-
-                    </header>
+                    <h2>
+                        Aspiring Web Developer
+                    </h2>
 
                     <p>
-                        This project was created as part of an internship task
-                        to demonstrate HTML5 semantic elements.
+                        HTML5 • CSS3 • JavaScript
                     </p>
 
-                    <address>
-                        Email:
-                        <a href="mailto:student@example.com">
-                            student@example.com
-                        </a>
-                    </address>
-
-                </section>
+                </aside>
 
             </div>
 
+        </section>
 
-            <!-- ================= ASIDE ================= -->
-            <aside class="sidebar">
 
-                <div class="sidebar-card">
+        <!-- =================================
+             ABOUT
+        ================================== -->
+        <section class="section">
 
-                    <p class="label">DID YOU KNOW?</p>
+            <div class="container">
 
-                    <h2>Semantic HTML</h2>
+                <header class="section-header">
 
-                    <p>
-                        Semantic HTML describes the meaning and purpose
-                        of content instead of focusing only on appearance.
+                    <p class="eyebrow">
+                        ABOUT ME
                     </p>
 
+                    <h2>
+                        A little about me
+                    </h2>
+
+                </header>
+
+
+                <div class="info-grid">
+
+                    <article class="info-card">
+
+                        <h3>
+                            Who I Am
+                        </h3>
+
+                        <p>
+                            I am a student and aspiring web developer
+                            who enjoys learning how websites are designed,
+                            structured, and developed.
+                        </p>
+
+                    </article>
+
+
+                    <article class="info-card">
+
+                        <h3>
+                            My Goal
+                        </h3>
+
+                        <p>
+                            My goal is to improve my development skills
+                            and create accessible websites that work
+                            well across different screen sizes.
+                        </p>
+
+                    </article>
+
                 </div>
 
+            </div>
 
-                <div class="sidebar-card">
-
-                    <h3>Learning Progress</h3>
-
-                    <ul class="progress-list">
-                        <li>HTML document structure</li>
-                        <li>Heading hierarchy</li>
-                        <li>Navigation</li>
-                        <li>Semantic elements</li>
-                        <li>Articles and sections</li>
-                        <li>Aside content</li>
-                        <li>Details and summary</li>
-                        <li>Time and mark elements</li>
-                    </ul>
-
-                </div>
+        </section>
 
 
-                <div class="sidebar-card highlight-card">
+        <!-- =================================
+             SKILLS
+        ================================== -->
+        <section class="section">
 
-                    <h3>Remember</h3>
+            <div class="container">
 
-                    <p>
-                        Use semantic elements because they describe
-                        <mark>what the content means</mark>.
+                <header class="section-header">
+
+                    <p class="eyebrow">
+                        SKILLS
                     </p>
 
+                    <h2>
+                        Technologies I am learning
+                    </h2>
+
+                </header>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+
+                        <h3>
+                            HTML5
+                        </h3>
+
+                        <p>
+                            Semantic and accessible webpage structure
+                            using modern HTML5 elements.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <h3>
+                            CSS3
+                        </h3>
+
+                        <p>
+                            Responsive layouts using CSS Grid,
+                            Flexbox, CSS variables, and media queries.
+                        </p>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Interactive webpage features and
+                            user interface functionality.
+                        </p>
+
+                    </article>
+
                 </div>
 
-            </aside>
+            </div>
 
-        </div>
+        </section>
+
+
+        <!-- =================================
+             PROJECTS
+        ================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <p class="eyebrow">
+                        PROJECTS
+                    </p>
+
+                    <h2>
+                        Featured work
+                    </h2>
+
+                    <p>
+                        A few examples of projects and practice work.
+                    </p>
+
+                </header>
+
+
+                <div class="project-grid">
+
+                    <!-- PROJECT 1 -->
+                    <article class="project-card">
+
+                        <div class="project-card-content">
+
+                            <h3>
+                                College Internship Management System
+                            </h3>
+
+                            <p>
+                                A web-based college internship management
+                                project designed to organize internship
+                                related information and processes.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>
+                                    HTML
+                                </span>
+
+                                <span>
+                                    CSS
+                                </span>
+
+                                <span>
+                                    JavaScript
+                                </span>
+
+                            </div>
+
+                            <a
+                                class="btn btn-secondary"
+                                href="projects.html"
+                            >
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 2 -->
+                    <article class="project-card">
+
+                        <div class="project-card-content">
+
+                            <h3>
+                                Semantic HTML5 Website
+                            </h3>
+
+                            <p>
+                                A semantic HTML5 website demonstrating
+                                meaningful page structure, accessibility,
+                                navigation, articles, sections, and footer
+                                content.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>
+                                    HTML5
+                                </span>
+
+                                <span>
+                                    Semantic HTML
+                                </span>
+
+                                <span>
+                                    Accessibility
+                                </span>
+
+                            </div>
+
+                            <a
+                                class="btn btn-secondary"
+                                href="index.html"
+                            >
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- PROJECT 3 -->
+                    <article class="project-card">
+
+                        <div class="project-card-content">
+
+                            <h3>
+                                Responsive Personal Portfolio
+                            </h3>
+
+                            <p>
+                                A mobile-first portfolio using CSS Grid,
+                                Flexbox, custom CSS variables, responsive
+                                media queries, and dark mode.
+                            </p>
+
+                            <div class="project-tags">
+
+                                <span>
+                                    CSS Grid
+                                </span>
+
+                                <span>
+                                    Flexbox
+                                </span>
+
+                                <span>
+                                    Responsive
+                                </span>
+
+                            </div>
+
+                            <a
+                                class="btn btn-secondary"
+                                href="index.html"
+                            >
+                                View Project
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             FAQ
+        ================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <p class="eyebrow">
+                        FAQ
+                    </p>
+
+                    <h2>
+                        Frequently asked questions
+                    </h2>
+
+                </header>
+
+
+                <details>
+
+                    <summary>
+                        What technologies am I learning?
+                    </summary>
+
+                    <p>
+                        I am currently learning HTML5, CSS3,
+                        JavaScript, responsive design, CSS Grid,
+                        Flexbox, and CSS custom properties.
+                    </p>
+
+                </details>
+
+
+                <details>
+
+                    <summary>
+                        Do I build responsive websites?
+                    </summary>
+
+                    <p>
+                        Yes. I use responsive layouts designed
+                        for mobile, tablet, and desktop screens.
+                    </p>
+
+                </details>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================
+             CONTACT CTA
+        ================================== -->
+        <section class="section">
+
+            <div class="container">
+
+                <header class="section-header">
+
+                    <p class="eyebrow">
+                        GET IN TOUCH
+                    </p>
+
+                    <h2>
+                        Let's work together
+                    </h2>
+
+                </header>
+
+
+                <article class="contact-card">
+
+                    <h3>
+                        Start a conversation
+                    </h3>
+
+                    <p>
+                        Have a project idea or want to connect?
+                        Visit my contact page.
+                    </p>
+
+                    <a
+                        class="btn btn-primary"
+                        href="contact.html"
+                    >
+                        Contact Me
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
 
     </main>
 
 
-    <!-- ================= FOOTER ================= -->
+    <!-- =====================================
+         FOOTER
+    ====================================== -->
     <footer class="site-footer">
 
-        <div class="container footer-content">
+        <div class="container footer-grid">
 
-            <div>
-                <h2>Semantic HTML5</h2>
+            <div class="footer-brand">
+
+                <h2>
+                    SanikaPortfolio
+                </h2>
 
                 <p>
-                    Internship Task Project
+                    Personal portfolio built with semantic HTML5,
+                    modern CSS, JavaScript, and responsive design.
                 </p>
+
             </div>
 
-            <nav aria-label="Footer Navigation">
 
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#elements">Elements</a>
-                <a href="#contact">Contact</a>
+            <nav
+                class="footer-nav"
+                aria-label="Footer navigation"
+            >
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="projects.html">
+                    Projects
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
 
             </nav>
 
+
             <p class="copyright">
-                &copy; 2026 Semantic HTML5. All rights reserved.
+                &copy; 2026 Sanika Patare.
+                All rights reserved.
             </p>
 
         </div>
 
     </footer>
 
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
+
 </html>
